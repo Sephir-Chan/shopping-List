@@ -1,5 +1,6 @@
 package application.model;
 
+import application.Constants;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -68,5 +69,18 @@ public class Product {
 			}
 		}
 		return false;
+	}
+	
+	@Override
+	public String toString() {
+		return Constants.PRODUCT_NAME + Constants.SEPARATOR_COLON + this.getName();
+	}
+	
+	@Override
+	public int hashCode() {
+		int result = 13;
+		result = 31 * result + this.getName().hashCode();
+		result = 31 * result + this.getCount().hashCode();
+		return result;
 	}
 }

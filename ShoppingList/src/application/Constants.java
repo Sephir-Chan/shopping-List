@@ -13,4 +13,8 @@ public class Constants {
 	public final static String NO_PRODUCT_NAME = "Es wurde keine Eingabe für den Produktnamen gemacht!";
 	public final static String NO_PRODUCT_COUNT = "In dem Feld \"Anzahl\" wurden ungültige Zeichen eingetragen!";
 	public final static String PLEASE_ENTER_ENTRIES = "Bitte tragen Sie einen Begriff in das Feld \"Produktname\" ein und nur Zahlen in das Feld \"Anzahl\" ein.";
+	
+	public final static String PRODUCT_NAME = "Produktname";
+	public final static String PRODUCT_COUNT = "Anzahl";
+	public final static String SEPARATOR_COLON = ": ";
 }
